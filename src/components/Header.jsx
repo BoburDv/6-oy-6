@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-sm">
-      <div className="flex justify-between items-center py-6 mx-auto max-w-7xl">
+      <div className="flex justify-between items-center py-6 mx-auto max-w-7xl lg:px-0 px-6">
         <div>
           <h3 className="font-extrabold text-2xl text-[#111517]">
             Where in the world?
