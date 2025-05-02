@@ -11,9 +11,9 @@ export default function CountriesCard({info}) {
         <div className="card-body px-6 pt-6 pb-[46px]">
           <h2 className="card-title line-clamp-1 font-extrabold text-[18px] text-[#111517]">{official}</h2>
           <div className="flex flex-col gap-2 mt-4">
-            <p className="text-[#111517]"><strong>Population: {population}</strong></p>
-            <p className="text-[#111517]"><strong>Region: {region}</strong></p>
-            <p className="text-[#111517]"><strong>Capital: {capital}</strong></p>
+            <p className="text-[#111517]"><strong>Population: <span className="font-light">{population}</span></strong></p>
+            <p className="text-[#111517]"><strong>Region: <span className="font-light">{region}</span></strong></p>
+            <p className="text-[#111517]"><strong>Capital: <span className="font-light">{capital}</span></strong></p>
           </div>
         </div>
       </div>
