@@ -43,6 +43,7 @@ export default function Countries() {
       });
   }, [filter, search]);
 
+
   if (loader) {
     return (
       <div className="absolute inset-0 flex items-center justify-center">
@@ -92,7 +93,7 @@ export default function Countries() {
         <select
           onChange={handleChange}
           value={filter === "all" ? "all" : filter.split("/")[1]}
-          className="select shadow-sm w-[200px] px-6 h-14 border-none"
+          className="select shadow-sm w-[200px] px-6 h-14 border-none cursor-pointer"
         >
           <option value="all" className="text-sm text-[#111517]" disabled>
             Filter by region
@@ -103,7 +104,7 @@ export default function Countries() {
         </select>
       </div>
 
-      <ul className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-10 lg:grid-cols-4 lg:gap-[75px] lg:px-0 px-6">
+      <ul className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-10 lg:grid-cols-4 lg:gap-16 lg:px-0 px-6">
         {countries.map((el) => {
           return <CountriesCard info={el} />;
         })}
